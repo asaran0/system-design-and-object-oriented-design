@@ -1,0 +1,189 @@
+
+core:
+implementation project(':aw_utils')
+    implementation project(':aw_questions')
+    implementation project(':filestoragelocal')
+    implementation project(':filestorageremote')
+done
+
+utils:
+No module dependency.
+done
+
+question:
+api project(':utils')
+done
+
+base:
+api project(':utils')
+done
+
+filestoragelocal:
+implementation project(':base')
+done
+core, execution, execution-inhouse, execution-selfserver, inhouse-app, intern-app, onboarding, payment, sefserve
+
+filestorageremote:
+implementation project(':base')
+done
+aw-question, core, execution, execution-inhouse, intern-app, ops, test
+
+camera
+implementation project(':filestoragelocal')
+done
+aw-question, execution-inhouse, execution-selfserve, execution, inhouse-app
+
+aw-utils:
+api project(':base')
+done
+
+
+auth:
+    api project(':base')
+    api project(':aw_utils')
+    api project(':filestorageremote')
+    implementation project(':aw_questions')
+done.
+execution, excution-inhouse, execution-selfserve, inhouse, inhouse-app, onboarding, payment, selfserve, sefserve-app
+
+
+aw_questions:
+implementation project(':aw_utils')
+        implementation project(':base')
+        implementation project(':filestorageremote')
+        implementation project(':camera')
+done.
+execution, intern-app, ops, execution-sefserve
+
+
+execution:
+    api project(':auth')
+        implementation project(':aw_questions')
+        api project(':camera')
+done.
+
+execution-inhouse:
+api project(':execution')
+done.
+
+execution-selfserve:
+api project(':execution')
+done.
+
+onboarding:
+api project(':auth')
+    implementation project(':aw_questions')
+    implementation project(':widget')
+done.
+
+inhouse:
+api project(':onboarding')
+    api project(':execution-inhouse')
+    api project(':selfserve')
+    api project(':intern-app')
+    api project(':payment')
+done.
+
+inhouseapp:
+implementation project(':inhouse')
+    implementation project(':filestorageremote')
+
+
+
+intern-app:
+api project(':core')
+    api project(':aw_utils')
+    api project(':aw_questions')
+    api project(':execution-inhouse')
+    api project(':execution-selfserve')
+    api project(':filestoragelocal')
+    api project(':filestorageremote')
+
+
+
+ops:
+implementation project(':aw_questions')
+    implementation project(':core')
+    implementation project(':aw_utils')
+    implementation project(':auth')
+    implementation project(':filestorageremote')
+done
+
+payment:
+api project(':auth')
+    implementation project(':aw_questions')
+    implementation project(':intern-app')
+
+
+
+selfserve-app:
+implementation project(':selfserve')
+    implementation project(':intern-app')
+    implementation project(':onboarding')
+
+selfserve:
+api project(':execution-selfserve')
+    api project(':intern-app')
+
+test:
+implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':base')
+    implementation project(':aw_utils')
+    implementation project(':camera')
+    implementation project(':filestorageremote')
+    implementation project(':payment')
+    implementation project(':execution-inhouse')
+
+
+    conference:
+    implementation project(':inhouse-app')
+        implementation project(path: ':commonlib')
+        implementation project(path: ':mobilertc')
+
+        implementation project(':inhouse-app')
+            implementation project(path: ':commonlib')
+            implementation project(path: ':mobilertc')
+
+implementation project(':aw_utils')
+    implementation project(':base')
+    implementation project(':filestorageremote')
+    implementation project(':camera')
+
+
+conference:
+implementation project(':inhouse-app')
+    implementation project(path: ':commonlib')
+    implementation project(path: ':mobilertc')
+
+
+
+
+
+
+
+payments:
+
+
+filestoragelocal:
+filestorageremote:
+
+
+
+Execution:
+Execution-inhouse:
+execution-selfserve:
+onboarding:
+inhouse:
+inhouse-app:
+
+selfserve:
+selfserve-app:
+
+ops:
+
+test
+
+questions:
+
+widget:
+done.

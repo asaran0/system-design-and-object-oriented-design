@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baecf74d-327c-4b20-ad81-79b4d9ef7bbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/ood/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/systemdesign/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/ood/vendingMachine/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/readme-awign-app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/systemdesign/docs/System design basics" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ood-sd/src/main/java/com/amardeep/systemdesign/docs/load balancing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +69,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604291472003">
+    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604860043314">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604291472003" />
+    <state x="532" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604860043314" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1604581182961">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604581182961" />
   </component>
 </project>
